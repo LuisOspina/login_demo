@@ -22,7 +22,7 @@ function fetchRecords($con){
         <img src="kpu-logo-1.png" alt="logo" style="width:50px;height:50px;">
         <h1>Profile</h1>
         Welcome <?php echo $_SESSION['username'];?> <br>
-        Your sensitive data: <?php echo $_SESSION['sensitivedata'];?> <br><br>
+        Your sensitive data: <?php echo $results['sensitivedata'];?> <br><br>
         <div>
             <a href='logout.php'>Logout</a> &nbsp;
             <!-- <a href='update.php'>Update</a> &nbsp; -->
