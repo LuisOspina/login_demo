@@ -22,7 +22,6 @@ if(isset($_POST['signup'])){
     }
     if(insertDetails($con, $username, $email, $password, $sensitivedata)){
         $_SESSION['username'] = $username;
-        $_SESSION['sensitivedata'] = $sensitivedata;
         header("Location: profile.php");
     }
 }
